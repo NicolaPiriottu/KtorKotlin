@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: io.ktor:ktor-client-android:1.6.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-client-android/1.6.1/ab7061c3ceff38b6386a8a9f2758ab057bb1780f/ktor-client-android-jvm-1.6.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-client-android/1.6.1/74fe3a410453fc7ba85b6c9d509b79cdb75d67a4/ktor-client-android-1.6.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-client-android/1.6.1/af70cda9db6ca90f9c4b8785604b3ff6ce1faa43/ktor-client-android-1.6.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
