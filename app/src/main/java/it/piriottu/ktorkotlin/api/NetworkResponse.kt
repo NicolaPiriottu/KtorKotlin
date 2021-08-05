@@ -7,7 +7,7 @@ sealed class NetworkResponse<out T : Any> {
     data class Success<out T : Any>(val data: T) : NetworkResponse<T>()
 
     /**
-     * response with a non-2xx status exception.
+     * response with a non-2xx status code.
      *
      */
     data class Error(val code: Int) : NetworkResponse<Nothing>()

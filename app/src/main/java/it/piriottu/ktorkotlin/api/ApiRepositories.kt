@@ -7,10 +7,12 @@ import io.ktor.client.statement.*
 import io.ktor.http.*
 import io.ktor.util.network.*
 import it.piriottu.ktorkotlin.model.Post
+import it.piriottu.ktorkotlin.utils.NetworkResponseCode
 
 object ApiRepositories {
 
     private val API_WORKER: ApiWorker = ApiWorker()
+    private val networkResponseCode=NetworkResponseCode()
 
     suspend fun getAllPosts(): NetworkResponse<MutableList<Post>> {
 
@@ -23,7 +25,7 @@ object ApiRepositories {
             (NetworkResponse.Success(response.receive()))
 
         } catch (e: Throwable) {
-            (NetworkResponse.Error(checkError(e)))
+            (NetworkResponse.Error(networkResponseCode.checkError(e)))
         }
     }
 
@@ -40,7 +42,7 @@ object ApiRepositories {
             (NetworkResponse.Success(response.receive()))
 
         } catch (e: Throwable) {
-            (NetworkResponse.Error(checkError(e)))
+            (NetworkResponse.Error(networkResponseCode.checkError(e)))
         }
     }
 
@@ -57,37 +59,7 @@ object ApiRepositories {
             // Return response
             (NetworkResponse.Success(true))
         } catch (e: Throwable) {
-            (NetworkResponse.Error(checkError(e)))
-        }
-    }
-
-    private fun checkError(e: Throwable): Int {
-        // Handle Error
-        return when (e) {
-
-            //For 3xx responses
-            is RedirectResponseException -> {
-                (e.response.status.value)
-            }
-            //For 4xx responses
-            is ClientRequestException -> {
-                (e.response.status.value)
-            }
-
-            //For 5xx responses
-            is ServerResponseException -> {
-                (e.response.status.value)
-            }
-
-            // Network Error
-            is UnresolvedAddressException -> {
-                // Internet Error
-                -1
-            }
-            else -> {
-                // Unhandled error
-                -1
-            }
+            (NetworkResponse.Error(networkResponseCode.checkError(e)))
         }
     }
 }
