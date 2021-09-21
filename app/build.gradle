@@ -2,15 +2,17 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'kotlinx-serialization'
+
 }
 
 android {
-    compileSdk 30
+    compileSdkVersion 31
+    buildToolsVersion '31.0.0'
 
     defaultConfig {
         applicationId "it.piriottu.ktorkotlin"
-        minSdk 21
-        targetSdk 30
+        minSdkVersion 24
+        targetSdkVersion 31
         versionCode 1
         versionName "1.0"
 
@@ -21,6 +23,9 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+
         }
     }
     compileOptions {
@@ -53,8 +58,18 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
     //Ktor
-    implementation 'io.ktor:ktor-client-android:1.6.1'
-    implementation 'io.ktor:ktor-client-serialization:1.6.1'
-    implementation 'io.ktor:ktor-client-gson:1.6.1'
+    implementation 'io.ktor:ktor-client-android:1.6.3'
+    implementation 'io.ktor:ktor-client-serialization:1.6.3'
+    implementation 'io.ktor:ktor-client-gson:1.6.3'
+    implementation "io.ktor:ktor-client-cio:1.6.3"
+    //Ktor log response
+    implementation "io.ktor:ktor-client-logging:1.6.1"
+    implementation "ch.qos.logback:logback-classic:1.2.3"
+    // Timber
+    api 'com.jakewharton.timber:timber:5.0.1'
+    // Lottie
+    implementation 'com.airbnb.android:lottie:4.1.0'
 
+    //exoplayer
+    implementation 'com.google.android.exoplayer:exoplayer:2.15.0'
 }

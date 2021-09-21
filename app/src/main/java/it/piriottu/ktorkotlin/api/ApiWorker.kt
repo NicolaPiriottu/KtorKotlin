@@ -4,6 +4,7 @@ package it.piriottu.ktorkotlin.api
 import android.util.Log
 import io.ktor.client.*
 import io.ktor.client.engine.android.*
+import io.ktor.client.engine.cio.*
 import io.ktor.client.features.*
 import io.ktor.client.features.json.*
 import io.ktor.client.features.observer.*
@@ -13,7 +14,7 @@ class ApiWorker {
 
     val BASE_URL = "https://jsonplaceholder.typicode.com"
 
-    private val client = HttpClient(Android) {
+    private val client = HttpClient(CIO) {
 
         //Header
         install(DefaultRequest) {

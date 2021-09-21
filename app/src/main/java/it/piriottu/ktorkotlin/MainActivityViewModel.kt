@@ -26,14 +26,14 @@ class MainActivityViewModel : ViewModel() {
     //endregion LiveData
     //region Public Methods
 
-    //Example 1
+    //Example 1 GET
     fun getPosts() {
         viewModelScope.launch {
             callPosts()
         }
     }
 
-    //Example 2
+    //Example 2 GET with params
     fun getPostById(idPost: String) {
         viewModelScope.launch {
             callPostById(idPost)
