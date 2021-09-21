@@ -6,7 +6,6 @@ import android.util.Log
 import android.widget.Toast
 import androidx.activity.viewModels
 import it.piriottu.ktorkotlin.managers.SessionManager
-import it.piriottu.ktorkotlin.models.Post
 
 /**
  * Created by OverApp on 21/09/21.

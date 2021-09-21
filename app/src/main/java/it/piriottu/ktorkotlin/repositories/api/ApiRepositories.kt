@@ -4,7 +4,7 @@ import io.ktor.client.call.*
 import io.ktor.client.request.*
 import io.ktor.client.statement.*
 import io.ktor.http.*
-import it.piriottu.ktorkotlin.models.Post
+import it.piriottu.ktorkotlin.models.PostResponse
 import it.piriottu.ktorkotlin.utils.NetworkResponseCode
 
 object ApiRepositories {
@@ -12,7 +12,7 @@ object ApiRepositories {
     private val API_WORKER: ApiWorker = ApiWorker()
     private val networkResponseCode = NetworkResponseCode()
 
-    suspend fun getAllPosts(): NetworkResponse<MutableList<Post>> {
+    suspend fun getAllPosts(): NetworkResponse<MutableList<PostResponse>> {
 
         return try {
             val response: HttpResponse =
@@ -27,7 +27,7 @@ object ApiRepositories {
         }
     }
 
-    suspend fun getPostById(idPost: String): NetworkResponse<MutableList<Post>> {
+    suspend fun getPostById(idPost: String): NetworkResponse<MutableList<PostResponse>> {
 
         return try {
             val response: HttpResponse =
@@ -45,16 +45,13 @@ object ApiRepositories {
     }
 
 
-    suspend fun createPost(post: Post): NetworkResponse<Boolean> {
+    suspend fun createPost(postResponse: PostResponse): NetworkResponse<Boolean> {
 
         return try {
             API_WORKER.getClient().post<HttpResponse> {
                 url(API_WORKER.BASE_URL + "/posts")
-                header("Accept", "application/json")
-                header("Content-Type", "application/json")
-                contentType(ContentType.Application.Json)
                 method = HttpMethod.Post
-                body = post
+                body = postResponse
             }
 
             // Return response
@@ -64,17 +61,19 @@ object ApiRepositories {
         }
     }
 
-    suspend fun createPostWithParams( bodyPost: String, title: String, userId: Int): NetworkResponse<Boolean> {
+    suspend fun createPostWithParams(
+        bodyPost: String,
+        title: String,
+        userId: Int
+    ): NetworkResponse<Boolean> {
 
         return try {
             //Set body request
-            val post = hashMapOf<String, Any>("body" to bodyPost,"title" to title, "userId" to userId )
+            val post =
+                hashMapOf<String, Any>("body" to bodyPost, "title" to title, "userId" to userId)
 
             API_WORKER.getClient().post<HttpResponse> {
                 url(API_WORKER.BASE_URL + "/posts")
-                header("Accept", "application/json")
-                header("Content-Type", "application/json")
-                contentType(ContentType.Application.Json)
                 method = HttpMethod.Post
                 body = post
             }
@@ -92,8 +91,6 @@ object ApiRepositories {
 
             API_WORKER.getClient().delete<HttpResponse> {
                 url(API_WORKER.BASE_URL + "/posts/$id")
-                header("Accept", "application/json")
-                header("Content-Type", "application/json")
                 method = HttpMethod.Delete
             }
 
@@ -104,17 +101,19 @@ object ApiRepositories {
         }
     }
 
-    suspend fun editPost(bodyPost: String, id: Int, title: String, userId: Int): NetworkResponse<Boolean> {
+    suspend fun editPost(
+        bodyPost: String,
+        id: Int,
+        title: String,
+        userId: Int
+    ): NetworkResponse<Boolean> {
         //Set body request
-        val post = hashMapOf<String, Any>("body" to bodyPost,"title" to title, "userId" to userId )
+        val post = hashMapOf<String, Any>("body" to bodyPost, "title" to title, "userId" to userId)
 
         return try {
 
             API_WORKER.getClient().put<HttpResponse> {
                 url(API_WORKER.BASE_URL + "/posts/$id")
-                header("Accept", "application/json")
-                header("Content-Type", "application/json")
-                contentType(ContentType.Application.Json)
                 method = HttpMethod.Put
                 body = post
             }

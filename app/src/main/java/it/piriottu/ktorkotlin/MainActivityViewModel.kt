@@ -5,7 +5,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import it.piriottu.ktorkotlin.repositories.api.ApiRepositories
 import it.piriottu.ktorkotlin.repositories.api.NetworkResponse
-import it.piriottu.ktorkotlin.models.Post
+import it.piriottu.ktorkotlin.models.PostResponse
 import it.piriottu.ktorkotlin.utils.Event
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -15,7 +15,7 @@ class MainActivityViewModel : ViewModel() {
 
     //region UseCase
     sealed class UseCaseLiveData {
-        data class ShowItems(val items: MutableList<Post>) : UseCaseLiveData()
+        data class ShowItems(val items: MutableList<PostResponse>) : UseCaseLiveData()
         data class Error(val code: Int) : UseCaseLiveData()
         data class Saved(val isSaved: Boolean) : UseCaseLiveData()
     }
@@ -41,17 +41,19 @@ class MainActivityViewModel : ViewModel() {
     }
 
     //Example 3
-    fun createPost(post: Post) {
+    fun createPost(postResponse: PostResponse) {
         viewModelScope.launch {
-            callCreatePost(post)
+            callCreatePost(postResponse)
         }
     }
+
     //Example 4
     fun createPostWithParams(bodyPost: String, title: String, userId: Int) {
         viewModelScope.launch {
             callCreatePostWithParams(bodyPost, title, userId)
         }
     }
+
     //Example 5
     fun deletePost(postId: Int) {
         viewModelScope.launch {
@@ -96,10 +98,10 @@ class MainActivityViewModel : ViewModel() {
     }
 
 
-    private suspend fun callCreatePost(post: Post) {
+    private suspend fun callCreatePost(postResponse: PostResponse) {
 
         withContext(Dispatchers.IO) {
-            ApiRepositories.createPost(post)
+            ApiRepositories.createPost(postResponse)
         }.apply {
             when (this) {
                 is NetworkResponse.Success -> useCaseLiveData.value =

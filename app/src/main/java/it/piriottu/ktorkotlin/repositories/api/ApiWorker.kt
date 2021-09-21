@@ -9,6 +9,7 @@ import io.ktor.client.features.json.*
 import io.ktor.client.features.logging.*
 import io.ktor.client.features.observer.*
 import io.ktor.client.request.*
+import io.ktor.http.*
 import it.piriottu.ktorkotlin.managers.SessionManager
 
 
@@ -20,7 +21,9 @@ class ApiWorker {
 
         //Header
         install(DefaultRequest) {
+            header("Accept", "application/json")
             header("Content-type", "application/json")
+            contentType(ContentType.Application.Json)
             //Pass your token
             header("Authorization", "Bearer ${SessionManager.userToken}")
         }

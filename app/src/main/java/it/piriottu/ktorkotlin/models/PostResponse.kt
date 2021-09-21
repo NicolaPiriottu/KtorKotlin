@@ -4,7 +4,7 @@ import com.google.gson.annotations.SerializedName
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class Post(
+data class PostResponse(
     @SerializedName("body")
     val body: String,
     val id: Int,
