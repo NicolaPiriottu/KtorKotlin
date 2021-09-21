@@ -65,11 +65,4 @@ dependencies {
     //Ktor log response
     implementation "io.ktor:ktor-client-logging:1.6.1"
     implementation "ch.qos.logback:logback-classic:1.2.3"
-    // Timber
-    api 'com.jakewharton.timber:timber:5.0.1'
-    // Lottie
-    implementation 'com.airbnb.android:lottie:4.1.0'
-
-    //exoplayer
-    implementation 'com.google.android.exoplayer:exoplayer:2.15.0'
 }

@@ -3,9 +3,9 @@ package it.piriottu.ktorkotlin
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import it.piriottu.ktorkotlin.api.ApiRepositories
-import it.piriottu.ktorkotlin.api.NetworkResponse
-import it.piriottu.ktorkotlin.model.Post
+import it.piriottu.ktorkotlin.repositories.api.ApiRepositories
+import it.piriottu.ktorkotlin.repositories.api.NetworkResponse
+import it.piriottu.ktorkotlin.models.Post
 import it.piriottu.ktorkotlin.utils.Event
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -41,9 +41,28 @@ class MainActivityViewModel : ViewModel() {
     }
 
     //Example 3
-    fun sendPost(post: Post) {
+    fun createPost(post: Post) {
         viewModelScope.launch {
-            callSendPost(post)
+            callCreatePost(post)
+        }
+    }
+    //Example 4
+    fun createPostWithParams(bodyPost: String, title: String, userId: Int) {
+        viewModelScope.launch {
+            callCreatePostWithParams(bodyPost, title, userId)
+        }
+    }
+    //Example 5
+    fun deletePost(postId: Int) {
+        viewModelScope.launch {
+            callDeletePost(postId)
+        }
+    }
+
+    //Example 6
+    fun editPost(bodyPost: String, id: Int, title: String, userId: Int) {
+        viewModelScope.launch {
+            callEditPost(bodyPost, id, title, userId)
         }
     }
 
@@ -74,14 +93,55 @@ class MainActivityViewModel : ViewModel() {
                     Event(UseCaseLiveData.Error(this.code))
             }
         }
-
     }
 
 
-    private suspend fun callSendPost(post: Post) {
+    private suspend fun callCreatePost(post: Post) {
 
         withContext(Dispatchers.IO) {
-            ApiRepositories.sendPost(post)
+            ApiRepositories.createPost(post)
+        }.apply {
+            when (this) {
+                is NetworkResponse.Success -> useCaseLiveData.value =
+                    Event(UseCaseLiveData.Saved(this.data))
+                is NetworkResponse.Error -> useCaseLiveData.value =
+                    Event(UseCaseLiveData.Error(this.code))
+            }
+        }
+    }
+
+    private suspend fun callCreatePostWithParams(bodyPost: String, title: String, userId: Int) {
+
+        withContext(Dispatchers.IO) {
+            ApiRepositories.createPostWithParams(bodyPost, title, userId)
+        }.apply {
+            when (this) {
+                is NetworkResponse.Success -> useCaseLiveData.value =
+                    Event(UseCaseLiveData.Saved(this.data))
+                is NetworkResponse.Error -> useCaseLiveData.value =
+                    Event(UseCaseLiveData.Error(this.code))
+            }
+        }
+    }
+
+    private suspend fun callDeletePost(postId: Int) {
+
+        withContext(Dispatchers.IO) {
+            ApiRepositories.deletePost(postId)
+        }.apply {
+            when (this) {
+                is NetworkResponse.Success -> useCaseLiveData.value =
+                    Event(UseCaseLiveData.Saved(this.data))
+                is NetworkResponse.Error -> useCaseLiveData.value =
+                    Event(UseCaseLiveData.Error(this.code))
+            }
+        }
+    }
+
+    private suspend fun callEditPost(bodyPost: String, id: Int, title: String, userId: Int) {
+
+        withContext(Dispatchers.IO) {
+            ApiRepositories.editPost(bodyPost, id, title, userId)
         }.apply {
             when (this) {
                 is NetworkResponse.Success -> useCaseLiveData.value =
