@@ -33,6 +33,7 @@ object ApiRepositories {
             val response: HttpResponse =
                 API_WORKER.getClient().get(API_WORKER.BASE_URL + "/posts") {
                     method = HttpMethod.Get
+                    //posts?id=5
                     parameter("id", idPost)
                 }
 
