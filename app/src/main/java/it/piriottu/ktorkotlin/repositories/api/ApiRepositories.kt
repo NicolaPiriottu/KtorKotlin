@@ -3,10 +3,12 @@ package it.piriottu.ktorkotlin.repositories.api
 import io.ktor.client.call.*
 import io.ktor.client.request.*
 import io.ktor.client.statement.*
-import io.ktor.http.*
 import it.piriottu.ktorkotlin.models.PostResponse
 import it.piriottu.ktorkotlin.utils.NetworkResponseCode
-
+/**
+ * Created by OverApp on 21/09/21.
+ *  Visit https://www.overapp.com/
+ */
 object ApiRepositories {
 
     private val API_WORKER: ApiWorker = ApiWorker()
@@ -16,9 +18,7 @@ object ApiRepositories {
 
         return try {
             val response: HttpResponse =
-                API_WORKER.getClient().get(API_WORKER.BASE_URL + "/posts") {
-                    method = HttpMethod.Get
-                }
+                API_WORKER.getClient().get(API_WORKER.BASE_URL + "/posts")
             // Return response
             (NetworkResponse.Success(response.receive()))
 
@@ -32,7 +32,6 @@ object ApiRepositories {
         return try {
             val response: HttpResponse =
                 API_WORKER.getClient().get(API_WORKER.BASE_URL + "/posts") {
-                    method = HttpMethod.Get
                     //posts?id=5
                     parameter("id", idPost)
                 }
@@ -51,7 +50,6 @@ object ApiRepositories {
         return try {
             API_WORKER.getClient().post<HttpResponse> {
                 url(API_WORKER.BASE_URL + "/posts")
-                method = HttpMethod.Post
                 body = postResponse
             }
 
@@ -75,7 +73,6 @@ object ApiRepositories {
 
             API_WORKER.getClient().post<HttpResponse> {
                 url(API_WORKER.BASE_URL + "/posts")
-                method = HttpMethod.Post
                 body = post
             }
 
@@ -92,7 +89,6 @@ object ApiRepositories {
 
             API_WORKER.getClient().delete<HttpResponse> {
                 url(API_WORKER.BASE_URL + "/posts/$id")
-                method = HttpMethod.Delete
             }
 
             // Return response
@@ -115,7 +111,6 @@ object ApiRepositories {
 
             API_WORKER.getClient().put<HttpResponse> {
                 url(API_WORKER.BASE_URL + "/posts/$id")
-                method = HttpMethod.Put
                 body = post
             }
 

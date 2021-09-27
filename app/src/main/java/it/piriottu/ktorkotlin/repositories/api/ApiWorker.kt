@@ -12,7 +12,10 @@ import io.ktor.client.request.*
 import io.ktor.http.*
 import it.piriottu.ktorkotlin.managers.SessionManager
 
-
+/**
+ * Created by OverApp on 21/09/21.
+ *  Visit https://www.overapp.com/
+ */
 class ApiWorker {
 
     val BASE_URL = "https://jsonplaceholder.typicode.com"

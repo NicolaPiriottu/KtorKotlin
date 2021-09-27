@@ -1,9 +1,11 @@
 package it.piriottu.ktorkotlin.models
 
 import com.google.gson.annotations.SerializedName
-import kotlinx.serialization.Serializable
+/**
+ * Created by OverApp on 21/09/21.
+ *  Visit https://www.overapp.com/
+ */
 
-@Serializable
 data class PostResponse(
     @SerializedName("body")
     val body: String,
