@@ -27,6 +27,7 @@
             <stringArg name="classpath">
               <args>
                 <arg>$MODULE_DIR$/../../../app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/20132dfe384e29c314f5148d7c49c357/transformed/jetified-ktor-serialization-gson-jvm-2.3.0.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/e3a3ccf143f196efffb3fe24b0511f72/transformed/jetified-kotlin-reflect-1.8.21.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/0d7244158be559c873e7d3bc182da2fe/transformed/navigation-ui-ktx-2.5.3-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/8519b4f4ded8fc097292a8cd710ba248/transformed/navigation-ui-2.5.3-api.jar</arg>
@@ -45,7 +46,6 @@
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/7bea68468ca0709191536cac8c9a02d0/transformed/navigation-common-2.5.3-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/1633ee3332dd029375ed9b73ae8cbedd/transformed/jetified-lifecycle-viewmodel-savedstate-2.5.1-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/bce4be18869a82144872d7077a879af8/transformed/jetified-core-ktx-1.10.1-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/f8343459df6b2d9a895f3da01df2cf59/transformed/jetified-ktor-client-gson-jvm-1.6.3.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/828561a25caa7a0084c9fe9b0cb2092e/transformed/jetified-savedstate-ktx-1.2.0-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/3d79bad48c1afe35d7d9cd08eee81a59/transformed/jetified-savedstate-1.2.0-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/739c46585dcf66777f1bf0914c7faf33/transformed/jetified-appcompat-resources-1.6.1-api.jar</arg>
@@ -63,25 +63,12 @@
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/cb536223373c8af8283234df8ce163b1/transformed/loader-1.0.0-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/7a7cd73eca3134bff89ff0523635961d/transformed/core-1.10.1-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/4abdc45cc8dad9b4bad895ac9f643845/transformed/jetified-annotation-experimental-1.3.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/1eaa9c738767d5d8e746a01fab8c949e/transformed/jetified-lifecycle-viewmodel-ktx-2.5.1-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/a5a203f6a0873ce1eeeb550d5ee69333/transformed/jetified-lifecycle-runtime-ktx-2.5.1-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/c204797c451de8a13cf1bbc205675de4/transformed/jetified-ktor-client-cio-jvm-1.6.3.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/6d113c4e81ebf98c3de9dd0d6a18fd8b/transformed/jetified-ktor-client-logging-jvm-1.6.1.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/a96a12e222403d09471137d33d678692/transformed/jetified-ktor-client-json-jvm-1.6.3.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/534c7793012dd38f5fcdf7b0e2b7bd8e/transformed/jetified-ktor-client-core-jvm-1.6.3.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/d2932c0de405fb0cfd6bd66f69c3acda/transformed/jetified-ktor-http-cio-jvm-1.6.3.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/f19e9c1d4c46449ce841e1b9f9d715a8/transformed/jetified-ktor-network-tls-jvm-1.6.3.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/49479ef8222cfd414ec2e595cf47eae6/transformed/jetified-ktor-http-jvm-1.6.3.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/36d6b2438d0546352ed5cec244ced085/transformed/jetified-ktor-network-jvm-1.6.3.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/1e56f551d74fbe63fb85b55449509462/transformed/jetified-ktor-utils-jvm-1.6.3.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/12ae23a09401592ca351d2d827db4645/transformed/jetified-ktor-io-jvm-1.6.3.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/4b234d3e825f8d26ccb1ed616bcf39a0/transformed/jetified-kotlinx-coroutines-core-jvm-1.6.1.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/29187ad2c32d02b0d504f994ea2f5960/transformed/jetified-kotlinx-coroutines-android-1.6.1.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/503bbc4dc6afa0d3b33e65fba8332657/transformed/jetified-kotlin-stdlib-jdk8-1.8.21.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/45dc2f2a429529c346c79d7f517d6bf6/transformed/cursoradapter-1.0.0-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/c44e4ff8309aaa29694761ad06e35028/transformed/cardview-1.0.0-api.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/a5a203f6a0873ce1eeeb550d5ee69333/transformed/jetified-lifecycle-runtime-ktx-2.5.1-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/126fd3b7b4da0697d7a5f4d72a988c44/transformed/lifecycle-runtime-2.5.1-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/1aa8624ba4fee1042c0858c64a628334/transformed/versionedparcelable-1.1.1-api.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/1eaa9c738767d5d8e746a01fab8c949e/transformed/jetified-lifecycle-viewmodel-ktx-2.5.1-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/fc4d4ded9664233fbb9d3252d99fdec8/transformed/lifecycle-viewmodel-2.5.1-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/91fe3bf4bf27713655d4a6b179991bf5/transformed/jetified-collection-ktx-1.1.0.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.collection/collection/1.1.0/1f27220b47669781457de0d600849a5de0e89909/collection-1.1.0.jar</arg>
@@ -96,6 +83,26 @@
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/e68efac0020b36c5dcac9209dba88d22/transformed/localbroadcastmanager-1.0.0-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/2feaeea33c107af8ccf715a4514c181b/transformed/print-1.0.0-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/99e2d5e29abff9d951ff15bb61ba1185/transformed/jetified-annotation-jvm-1.6.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/24324db6e7667bd0047afd219ec8c77d/transformed/jetified-ktor-client-gson-jvm-2.3.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/5cb8b26e23996ab4aeb9d9c4838c7723/transformed/jetified-ktor-client-cio-jvm-2.3.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/8be48505701a0dfb851e111d945bf98f/transformed/jetified-ktor-client-logging-jvm-2.3.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/4324868bc65e6b4c651e0b2b1db3c28d/transformed/jetified-ktor-client-content-negotiation-jvm-2.3.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/90b34ed1ddaca379e244e75a63a60386/transformed/jetified-ktor-client-json-jvm-2.3.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/8a2198390a109164f2f7717cf8e62702/transformed/jetified-ktor-client-core-jvm-2.3.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/ef47374044a7e580cf11721326ad3b09/transformed/jetified-ktor-http-cio-jvm-2.3.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/2d5b82e63828b75ef0f6c8211848fefc/transformed/jetified-ktor-websocket-serialization-jvm-2.3.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/3581149b47f6c2649fb698739f9e9cbc/transformed/jetified-ktor-serialization-jvm-2.3.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/c054d87b68aef2f7cac9407b5976e6cc/transformed/jetified-ktor-websockets-jvm-2.3.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/b448d28ceeeaa773c2ba3a5df626abf3/transformed/jetified-ktor-network-tls-jvm-2.3.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/9dad7cac37cb01ee99395397308833ba/transformed/jetified-ktor-events-jvm-2.3.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/648364e694625cee92a1499de18bef78/transformed/jetified-ktor-http-jvm-2.3.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/eaf03a8d02ac4a5c00724043998f478a/transformed/jetified-ktor-network-jvm-2.3.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/6f93ded547a52bec65b5cdf044f55bbc/transformed/jetified-ktor-utils-jvm-2.3.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/625b398f344493df3093a0663c1e37ac/transformed/jetified-ktor-io-jvm-2.3.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/a697fb7781f309d7d847a642dacbfbb9/transformed/jetified-kotlinx-coroutines-jdk8-1.6.4.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/62cfa6d3a881e5d1ff2f7db4b7a7a2f7/transformed/jetified-kotlinx-coroutines-core-jvm-1.6.4.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/4fcbcf276e8120f62578fb71f71629d9/transformed/jetified-kotlinx-coroutines-android-1.6.4.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/503bbc4dc6afa0d3b33e65fba8332657/transformed/jetified-kotlin-stdlib-jdk8-1.8.21.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/dc6bac8b94edf50cb3faa6970cd8241d/transformed/jetified-kotlin-stdlib-jdk7-1.8.21.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/613d59f415e8efdcedfc6161a4e4f19c/transformed/jetified-kotlin-stdlib-1.8.21.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/ae2c77ba0ec8bc9e1fe65cf06ab22a67/transformed/constraintlayout-2.1.4-api.jar</arg>
@@ -103,8 +110,8 @@
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/33dcac364a54195e03df8e71e18bf5cc/transformed/jetified-hamcrest-core-1.3.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/6859843f5828b35a195235fca43dd6b1/transformed/jetified-kotlin-stdlib-common-1.8.21.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/68ae98387a3b03ba5f2bd4faf483123d/transformed/jetified-annotations-13.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/51dc5237a20bd9ce355d67cfc3a0d36c/transformed/jetified-slf4j-api-1.7.30.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/122bf9cb8573aea5d2e607c3df8a0332/transformed/jetified-gson-2.8.6.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/9168435e823b91d37724e6c7818800da/transformed/jetified-slf4j-api-1.7.36.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/3c67ad88c4f6aca61e68cf55b48217d4/transformed/jetified-gson-2.10.1.jar</arg>
                 <arg>$USER_HOME$/Library/Android/sdk/platforms/android-33/android.jar</arg>
                 <arg>$USER_HOME$/Library/Android/sdk/build-tools/31.0.0/core-lambda-stubs.jar</arg>
               </args>
@@ -160,24 +167,31 @@
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.arch.core:core-common:2.1.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-common:2.5.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.collection:collection:1.1.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.4" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.21" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.21" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.collection:collection-ktx:1.1.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-client-gson:1.6.3" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: org.slf4j:slf4j-api:1.7.30" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-client-json-jvm:1.6.3" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-client-core-jvm:1.6.3" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-http-jvm:1.6.3" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-utils-jvm:1.6.3" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-io-jvm:1.6.3" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-http-cio-jvm:1.6.3" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-network-jvm:1.6.3" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.code.gson:gson:2.8.6" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-client-cio-jvm:1.6.3" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-network-tls-jvm:1.6.3" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-client-logging-jvm:1.6.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-client-gson-jvm:2.3.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-jdk8:1.6.4" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.slf4j:slf4j-api:1.7.36" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-client-json-jvm:2.3.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-client-core-jvm:2.3.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-http-jvm:2.3.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-utils-jvm:2.3.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-io-jvm:2.3.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-events-jvm:2.3.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-websocket-serialization-jvm:2.3.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-serialization-jvm:2.3.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-websockets-jvm:2.3.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.code.gson:gson:2.10.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-client-cio-jvm:2.3.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-http-cio-jvm:2.3.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-network-jvm:2.3.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-network-tls-jvm:2.3.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-client-logging-jvm:2.3.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-client-content-negotiation-jvm:2.3.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-serialization-gson-jvm:2.3.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: junit:junit:4.13.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest-core:1.3" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.core:core-ktx:1.10.1@aar" level="project" />

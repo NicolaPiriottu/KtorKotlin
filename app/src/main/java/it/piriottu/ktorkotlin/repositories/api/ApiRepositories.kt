@@ -5,6 +5,7 @@ import io.ktor.client.request.*
 import io.ktor.client.statement.*
 import it.piriottu.ktorkotlin.models.PostResponse
 import it.piriottu.ktorkotlin.utils.NetworkResponseCode
+
 /**
  * Created by OverApp on 21/09/21.
  *  Visit https://www.overapp.com/
@@ -20,7 +21,7 @@ object ApiRepositories {
             val response: HttpResponse =
                 API_WORKER.getClient().get(API_WORKER.BASE_URL + "/posts")
             // Return response
-            (NetworkResponse.Success(response.receive()))
+            (NetworkResponse.Success(response.body()))//response.receive()
 
         } catch (e: Throwable) {
             (NetworkResponse.Error(networkResponseCode.checkError(e)))
@@ -37,7 +38,7 @@ object ApiRepositories {
                 }
 
             // Return response
-            (NetworkResponse.Success(response.receive()))
+            (NetworkResponse.Success(response.body()))//response.receive()
 
         } catch (e: Throwable) {
             (NetworkResponse.Error(networkResponseCode.checkError(e)))
@@ -48,9 +49,10 @@ object ApiRepositories {
     suspend fun createPost(postResponse: PostResponse): NetworkResponse<Boolean> {
 
         return try {
-            API_WORKER.getClient().post<HttpResponse> {
+            API_WORKER.getClient().post /*post<HttpResponse>*/ {
                 url(API_WORKER.BASE_URL + "/posts")
-                body = postResponse
+                setBody(postResponse)//body = postResponse
+
             }
 
             // Return response
@@ -71,9 +73,9 @@ object ApiRepositories {
             val post =
                 hashMapOf<String, Any>("body" to bodyPost, "title" to title, "userId" to userId)
 
-            API_WORKER.getClient().post<HttpResponse> {
+            API_WORKER.getClient().post /*post<HttpResponse>*/ {
                 url(API_WORKER.BASE_URL + "/posts")
-                body = post
+                setBody(post)//body = post
             }
 
             // Return response
@@ -87,7 +89,7 @@ object ApiRepositories {
 
         return try {
 
-            API_WORKER.getClient().delete<HttpResponse> {
+            API_WORKER.getClient().delete/*delete<HttpResponse>*/ {
                 url(API_WORKER.BASE_URL + "/posts/$id")
             }
 
@@ -109,9 +111,9 @@ object ApiRepositories {
 
         return try {
 
-            API_WORKER.getClient().put<HttpResponse> {
+            API_WORKER.getClient().put/*put<HttpResponse>*/ {
                 url(API_WORKER.BASE_URL + "/posts/$id")
-                body = post
+                setBody(post)//body = post
             }
 
             // Return response
