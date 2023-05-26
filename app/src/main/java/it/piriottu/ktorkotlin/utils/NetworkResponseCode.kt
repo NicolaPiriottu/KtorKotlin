@@ -1,10 +1,9 @@
 package it.piriottu.ktorkotlin.utils
 
-/*import io.ktor.client.features.*
-import io.ktor.util.network.**/
+//import io.ktor.client.features.*
 
-import io.ktor.client.plugins.*
 import io.ktor.util.network.*
+import io.ktor.client.plugins.*
 
 /**
  * Created by OverApp on 21/09/21.
@@ -15,7 +14,7 @@ class NetworkResponseCode {
     /**
      * responses status code.
      */
-     fun checkError(e: Throwable): Int {
+    fun checkError(e: Throwable): Int {
         // Handle Error
         return when (e) {
 
@@ -38,6 +37,7 @@ class NetworkResponseCode {
                 // Internet Error
                 -1
             }
+
             else -> {
                 // Unhandled error
                 -2

@@ -1,22 +1,16 @@
 package it.piriottu.ktorkotlin.repositories.api
 
-
 import android.util.Log
 import io.ktor.client.*
 import io.ktor.client.engine.cio.*
-import io.ktor.client.plugins.DefaultRequest
-import io.ktor.client.plugins.HttpTimeout
+import io.ktor.client.plugins.*
 import io.ktor.client.plugins.contentnegotiation.ContentNegotiation
-import io.ktor.client.plugins.logging.DEFAULT
-import io.ktor.client.plugins.logging.LogLevel
-import io.ktor.client.plugins.logging.Logger
-import io.ktor.client.plugins.logging.Logging
+import io.ktor.client.plugins.logging.*
 import io.ktor.client.plugins.observer.ResponseObserver
 import io.ktor.client.request.*
 import io.ktor.http.*
 import io.ktor.serialization.gson.gson
 import it.piriottu.ktorkotlin.managers.SessionManager
-
 
 //OLD
 /*
@@ -26,7 +20,8 @@ import io.ktor.client.features.*
 import io.ktor.client.features.json.*
 * */
 /**
- * Created by OverApp on 21/09/21.
+ * Created by OverApp on 21/09/2021.
+ * Updated 26/05/2023
  *  Visit https://www.overapp.com/
  */
 class ApiWorker {
@@ -48,11 +43,11 @@ class ApiWorker {
             //Pass your token
             header("Authorization", "Bearer ${SessionManager.userToken}")
         }
-        // Json
-       /* install(JsonFeature) {
-            serializer = GsonSerializer()
-        }*/
-
+        //REMOVE
+        /* install(JsonFeature) {
+             serializer = GsonSerializer()
+         }*/
+        //ADD
         install(ContentNegotiation) {
             gson()
         }

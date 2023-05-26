@@ -44,6 +44,7 @@ class MainActivity : AppCompatActivity() {
                 //Example 1 GET
                 viewModel.getPosts()
             }
+
             R.id.getPostBtn -> {
                 //Example 2 GET with params : https://jsonplaceholder.typicode.com/posts?id=5
                 viewModel.getPostById("5")
@@ -56,6 +57,7 @@ class MainActivity : AppCompatActivity() {
                 val post = PostResponse("Body post", 1, "Title post", 1)
                 viewModel.createPost(post)
             }
+
             R.id.postWhitParamsBtn -> {
                 //Example 4 POST whit params
                 viewModel.createPostWithParams("Hello World!", "First insert", 1)
@@ -79,7 +81,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun setupObserver() {
         // Use Case
-        viewModel.useCaseLiveData.observe(this, {
+        viewModel.useCaseLiveData.observe(this) {
             it.getContentIfNotHandled()?.let { useCase ->
                 progress.isVisible = false
                 when (useCase) {
@@ -87,17 +89,19 @@ class MainActivity : AppCompatActivity() {
                         Log.d("MainActivity", "Error ${useCase.code}")
                         showToast("Error ${useCase.code}")
                     }
+
                     is MainActivityViewModel.UseCaseLiveData.ShowPosts -> {
                         Log.d("MainActivity", "ShowItems ${useCase.items}")
                         showToast("ShowItems ${useCase.items}")
                     }
+
                     is MainActivityViewModel.UseCaseLiveData.Saved -> {
                         Log.d("MainActivity", "Saved ${useCase.isSaved}")
                         showToast("Saved ${useCase.isSaved}")
                     }
                 }
             }
-        })
+        }
     }
 
     private fun showToast(response: String) {

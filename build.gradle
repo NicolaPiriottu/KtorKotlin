@@ -13,8 +13,6 @@ buildscript {
         classpath "org.jetbrains.kotlin:kotlin-serialization:$kotlin_version"
         // Navigation Safe Args
         classpath 'androidx.navigation:navigation-safe-args-gradle-plugin:2.5.3'
-
-        classpath 'com.google.gms:google-services:4.3.15'
     }
 }
 

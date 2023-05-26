@@ -10,6 +10,7 @@ import it.piriottu.ktorkotlin.utils.Event
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+
 /**
  * Created by OverApp on 21/09/21.
  *  Visit https://www.overapp.com/
@@ -80,6 +81,7 @@ class MainActivityViewModel : ViewModel() {
             when (this) {
                 is NetworkResponse.Success -> useCaseLiveData.value =
                     Event(UseCaseLiveData.ShowPosts(this.data))
+
                 is NetworkResponse.Error -> useCaseLiveData.value =
                     Event(UseCaseLiveData.Error(this.code))
             }
@@ -94,6 +96,7 @@ class MainActivityViewModel : ViewModel() {
             when (this) {
                 is NetworkResponse.Success -> useCaseLiveData.value =
                     Event(UseCaseLiveData.ShowPosts(this.data))
+
                 is NetworkResponse.Error -> useCaseLiveData.value =
                     Event(UseCaseLiveData.Error(this.code))
             }
@@ -109,6 +112,7 @@ class MainActivityViewModel : ViewModel() {
             when (this) {
                 is NetworkResponse.Success -> useCaseLiveData.value =
                     Event(UseCaseLiveData.Saved(this.data))
+
                 is NetworkResponse.Error -> useCaseLiveData.value =
                     Event(UseCaseLiveData.Error(this.code))
             }
@@ -123,6 +127,7 @@ class MainActivityViewModel : ViewModel() {
             when (this) {
                 is NetworkResponse.Success -> useCaseLiveData.value =
                     Event(UseCaseLiveData.Saved(this.data))
+
                 is NetworkResponse.Error -> useCaseLiveData.value =
                     Event(UseCaseLiveData.Error(this.code))
             }
@@ -137,6 +142,7 @@ class MainActivityViewModel : ViewModel() {
             when (this) {
                 is NetworkResponse.Success -> useCaseLiveData.value =
                     Event(UseCaseLiveData.Saved(this.data))
+
                 is NetworkResponse.Error -> useCaseLiveData.value =
                     Event(UseCaseLiveData.Error(this.code))
             }
@@ -151,6 +157,7 @@ class MainActivityViewModel : ViewModel() {
             when (this) {
                 is NetworkResponse.Success -> useCaseLiveData.value =
                     Event(UseCaseLiveData.Saved(this.data))
+
                 is NetworkResponse.Error -> useCaseLiveData.value =
                     Event(UseCaseLiveData.Error(this.code))
             }
