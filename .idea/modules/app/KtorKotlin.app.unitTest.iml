@@ -27,7 +27,7 @@
             <stringArg name="classpath">
               <args>
                 <arg>$MODULE_DIR$/../../../app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/3aaa96898dbee7ceb9fb4117ee480ffd/transformed/jetified-ktor-serialization-gson-jvm-2.3.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/f1d273f10e4e334d4b8416c71eee98fe/transformed/jetified-ktor-serialization-gson-jvm-2.3.1.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/b2308cb8288cb6bddf959e0e96afc954/transformed/jetified-kotlin-reflect-1.8.21.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/c7bec3e33f3896aa7ccf089c395d9d54/transformed/navigation-common-2.6.0-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/493fb228a29d8d3a83e84ea144a79b8d/transformed/navigation-common-ktx-2.6.0-api.jar</arg>
@@ -83,22 +83,22 @@
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/cc5c4f6d1ba2e59a58191403f5eced60/transformed/localbroadcastmanager-1.0.0-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/43c7817184445ba8a8849070cf5fc1c1/transformed/print-1.0.0-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/0096eaf729f7d258044c0e89c32855d1/transformed/jetified-annotation-jvm-1.6.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/a32ca4cd224eb2c76f5c5cd800c1ebfd/transformed/jetified-ktor-client-gson-jvm-2.3.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/155fa00885c2b7225cfba0017d39a291/transformed/jetified-ktor-client-cio-jvm-2.3.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/588d4028245539be9e8746123b2f1e80/transformed/jetified-ktor-client-logging-jvm-2.3.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/bc4eafa60a076a65fed82dc4073dfbcf/transformed/jetified-ktor-client-content-negotiation-jvm-2.3.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/5ee55f2e4e5afd5fd23f232180068b4b/transformed/jetified-ktor-client-json-jvm-2.3.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/5e5005c6201a1daaa5aef8049c5d8e09/transformed/jetified-ktor-client-core-jvm-2.3.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/674b4e452a9ceec6bada50f92860d695/transformed/jetified-ktor-http-cio-jvm-2.3.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/5a279c0c5f00d121aa3869c2fcd9bac1/transformed/jetified-ktor-websocket-serialization-jvm-2.3.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/a5a99a535c0339ea9bf9c0b3fb7e7633/transformed/jetified-ktor-serialization-jvm-2.3.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/d1ef95fdc027df936f25e20fcc045ca8/transformed/jetified-ktor-websockets-jvm-2.3.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/75e2fecfb1a6244a501f83e8212f9a0e/transformed/jetified-ktor-network-tls-jvm-2.3.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/6bd08e50e8f9ae01a08730ae40f96cc7/transformed/jetified-ktor-events-jvm-2.3.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/ebaf60efe02665bf19a1e9317c57707f/transformed/jetified-ktor-http-jvm-2.3.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/c279ad98af9a485b5ef1877b745908f5/transformed/jetified-ktor-network-jvm-2.3.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/ada98cae1a25057e81c050174b75326c/transformed/jetified-ktor-utils-jvm-2.3.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/6eff9bb3baed4122663e120fb62b0ad5/transformed/jetified-ktor-io-jvm-2.3.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/e47ae1f9f81650428b29760e1a9933a6/transformed/jetified-ktor-client-gson-jvm-2.3.1.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/5df9f4ff34c373ca701f98f50ffb1d57/transformed/jetified-ktor-client-cio-jvm-2.3.1.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/176cd3f93f03fbdeca7fc60b08a18ed8/transformed/jetified-ktor-client-logging-jvm-2.3.1.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/dd9b52004de73a6cdff1ba7612dc73c0/transformed/jetified-ktor-client-content-negotiation-jvm-2.3.1.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/7bf1063623224acc6740851a9ebefec9/transformed/jetified-ktor-client-json-jvm-2.3.1.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/fd2cc9c4ee50c486d20618e00394c473/transformed/jetified-ktor-client-core-jvm-2.3.1.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/c13e16ba855e8b92f357878ab6cbebbc/transformed/jetified-ktor-http-cio-jvm-2.3.1.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/74bdf03dd90e7fdd03a81d578ee4c7cc/transformed/jetified-ktor-websocket-serialization-jvm-2.3.1.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/fc2120bd953cb9f964b33bfbfa93a335/transformed/jetified-ktor-serialization-jvm-2.3.1.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/efe83a243763d6795f09d5e4edb248d1/transformed/jetified-ktor-websockets-jvm-2.3.1.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/22670746c4309d8a540f0aab47b8526b/transformed/jetified-ktor-network-tls-jvm-2.3.1.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/52127a25bb622736fbb3cc5c56158fd4/transformed/jetified-ktor-events-jvm-2.3.1.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/f73ba76e4aced3d193ea9d2d67b281db/transformed/jetified-ktor-http-jvm-2.3.1.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/47718f4cfd796e0bc7f16125cb87c15c/transformed/jetified-ktor-network-jvm-2.3.1.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/ccdf3e24de727f4d368b19fe387ff840/transformed/jetified-ktor-utils-jvm-2.3.1.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/87fe089f089868d494fd7d8a8239d0ce/transformed/jetified-ktor-io-jvm-2.3.1.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/62fcb24a61041b142d8d6c1510ba7955/transformed/jetified-kotlinx-coroutines-jdk8-1.6.4.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/d412aa247e4c708a86cb0d4b7ee5a75f/transformed/jetified-kotlinx-coroutines-core-jvm-1.6.4.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/0cf3855efbb4a28d61eec666eb3eb270/transformed/jetified-kotlinx-coroutines-android-1.6.4.jar</arg>
@@ -172,26 +172,26 @@
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.21" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.collection:collection:1.1.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.collection:collection-ktx:1.1.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-client-gson-jvm:2.3.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-client-gson-jvm:2.3.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-jdk8:1.6.4" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.slf4j:slf4j-api:1.7.36" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-client-json-jvm:2.3.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-client-core-jvm:2.3.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-http-jvm:2.3.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-utils-jvm:2.3.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-io-jvm:2.3.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-events-jvm:2.3.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-websocket-serialization-jvm:2.3.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-serialization-jvm:2.3.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-websockets-jvm:2.3.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-client-json-jvm:2.3.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-client-core-jvm:2.3.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-http-jvm:2.3.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-utils-jvm:2.3.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-io-jvm:2.3.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-events-jvm:2.3.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-websocket-serialization-jvm:2.3.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-serialization-jvm:2.3.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-websockets-jvm:2.3.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.code.gson:gson:2.10.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-client-cio-jvm:2.3.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-http-cio-jvm:2.3.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-network-jvm:2.3.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-network-tls-jvm:2.3.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-client-logging-jvm:2.3.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-client-content-negotiation-jvm:2.3.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-serialization-gson-jvm:2.3.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-client-cio-jvm:2.3.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-http-cio-jvm:2.3.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-network-jvm:2.3.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-network-tls-jvm:2.3.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-client-logging-jvm:2.3.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-client-content-negotiation-jvm:2.3.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.ktor:ktor-serialization-gson-jvm:2.3.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: junit:junit:4.13.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest-core:1.3" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.core:core-ktx:1.10.1@aar" level="project" />
