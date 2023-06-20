@@ -12,7 +12,7 @@ buildscript {
         //Used for Ktor
         classpath "org.jetbrains.kotlin:kotlin-serialization:$kotlin_version"
         // Navigation Safe Args
-        classpath 'androidx.navigation:navigation-safe-args-gradle-plugin:2.5.3'
+        classpath 'androidx.navigation:navigation-safe-args-gradle-plugin:2.6.0'
     }
 }
 
