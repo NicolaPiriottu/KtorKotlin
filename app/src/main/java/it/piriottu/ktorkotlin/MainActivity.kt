@@ -12,7 +12,7 @@ import it.piriottu.ktorkotlin.managers.SessionManager
 import it.piriottu.ktorkotlin.models.PostResponse
 
 /**
- * Created by OverApp on 21/09/21.
+ * Created by OverApp on 27/07/2023.
  *  Visit https://www.overapp.com/
  */
 class MainActivity : AppCompatActivity() {
@@ -86,18 +86,18 @@ class MainActivity : AppCompatActivity() {
                 progress.isVisible = false
                 when (useCase) {
                     is MainActivityViewModel.UseCaseLiveData.Error -> {
-                        Log.d("MainActivity", "Error ${useCase.code}")
-                        showToast("Error ${useCase.code}")
+                        Log.d("MainActivity", "Error \n${useCase.code}")
+                        showToast("Error \n${useCase.code}")
                     }
 
                     is MainActivityViewModel.UseCaseLiveData.ShowPosts -> {
-                        Log.d("MainActivity", "ShowItems ${useCase.items}")
-                        showToast("ShowItems ${useCase.items}")
+                        Log.d("MainActivity", "ShowItems \n${useCase.items}")
+                        showToast("ShowItems \n${useCase.items}")
                     }
 
                     is MainActivityViewModel.UseCaseLiveData.Saved -> {
-                        Log.d("MainActivity", "Saved ${useCase.isSaved}")
-                        showToast("Saved ${useCase.isSaved}")
+                        Log.d("MainActivity", "${useCase.message} ${useCase.isSaved}")
+                        showToast("${useCase.message}: ${useCase.isSaved}")
                     }
                 }
             }

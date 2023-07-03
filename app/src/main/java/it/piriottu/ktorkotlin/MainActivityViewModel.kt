@@ -12,7 +12,7 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
 /**
- * Created by OverApp on 21/09/21.
+ * Created by OverApp on 27/07/2023.
  *  Visit https://www.overapp.com/
  */
 class MainActivityViewModel : ViewModel() {
@@ -21,7 +21,7 @@ class MainActivityViewModel : ViewModel() {
     sealed class UseCaseLiveData {
         data class ShowPosts(val items: MutableList<PostResponse>) : UseCaseLiveData()
         data class Error(val code: Int) : UseCaseLiveData()
-        data class Saved(val isSaved: Boolean) : UseCaseLiveData()
+        data class Saved(val isSaved: Boolean, val message: String) : UseCaseLiveData()
     }
     //endregion UseCase
 
@@ -111,7 +111,7 @@ class MainActivityViewModel : ViewModel() {
         }.apply {
             when (this) {
                 is NetworkResponse.Success -> useCaseLiveData.value =
-                    Event(UseCaseLiveData.Saved(this.data))
+                    Event(UseCaseLiveData.Saved(this.data, "Created with object"))
 
                 is NetworkResponse.Error -> useCaseLiveData.value =
                     Event(UseCaseLiveData.Error(this.code))
@@ -126,7 +126,7 @@ class MainActivityViewModel : ViewModel() {
         }.apply {
             when (this) {
                 is NetworkResponse.Success -> useCaseLiveData.value =
-                    Event(UseCaseLiveData.Saved(this.data))
+                    Event(UseCaseLiveData.Saved(this.data, "Created with params"))
 
                 is NetworkResponse.Error -> useCaseLiveData.value =
                     Event(UseCaseLiveData.Error(this.code))
@@ -141,7 +141,7 @@ class MainActivityViewModel : ViewModel() {
         }.apply {
             when (this) {
                 is NetworkResponse.Success -> useCaseLiveData.value =
-                    Event(UseCaseLiveData.Saved(this.data))
+                    Event(UseCaseLiveData.Saved(this.data, "Delete post"))
 
                 is NetworkResponse.Error -> useCaseLiveData.value =
                     Event(UseCaseLiveData.Error(this.code))
@@ -156,7 +156,7 @@ class MainActivityViewModel : ViewModel() {
         }.apply {
             when (this) {
                 is NetworkResponse.Success -> useCaseLiveData.value =
-                    Event(UseCaseLiveData.Saved(this.data))
+                    Event(UseCaseLiveData.Saved(this.data, "Edit post"))
 
                 is NetworkResponse.Error -> useCaseLiveData.value =
                     Event(UseCaseLiveData.Error(this.code))
